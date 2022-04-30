@@ -1,0 +1,84 @@
+* {padding: 0;margin: 0;text-align:center;}
+nav {
+    background-color: bisque;
+    height: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+main p {
+    grid-area: 2 / 2 / 3 / 4;
+    width: 70vw;
+}
+aside {
+    grid-area: 1 / 1 / 3 / 2;
+}
+aside div {
+    width: 15vw;
+    margin-left: 15%;
+}
+aside ul {
+    list-style-type: square;
+}
+footer {
+    background-color: rgba(128, 128, 128, 0.537);
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: none;
+}
+a:hover {
+    text-decoration: none;
+    color: blueviolet;
+}
+.pub {
+    height: 12vw;
+}
+#taylor1 {
+    height: 29.83vw;
+}
+@media all and (max-device-width: 426px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+    }
+    main p {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    aside {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    aside div {
+        width: 25vw;
+        margin-left: 40%;
+        font-size: xx-large;
+    }
+    .pub {
+        height: 35vw;
+        width: 60vw;
+    }
+    #taylor1 {
+        height: 38.7vw;
+    }
+}

@@ -1,0 +1,148 @@
+* {padding: 0;margin: 0;text-align:center;}
+nav {
+    background-color: bisque;
+    height: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+main a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+aside div {
+    width: 15vw;
+    margin-left: 25%;
+}
+footer {
+    background-color: rgba(128, 128, 128, 0.537);
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: none;
+}
+a:hover {
+    text-decoration: none;
+    color: blueviolet;
+}
+#taylor img {
+    height: 70%;
+    width: 70%;
+}
+#taka img {
+    height: 70%;
+    width: 70%;
+}
+.photoProd {
+    height: 50%;
+    width: 50%;
+}
+.photoProd2 {
+    height: 40%;
+    width: 40%;
+}
+.photoPub {
+    width: 90%;
+}
+#taylor {
+    margin-top: 31.1%;
+}
+#humming {
+    margin-top: 8%;
+}
+#lola {
+    margin-top: 1.6%;
+}
+#taka {
+    margin-top: 7%;
+}
+@media all and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+    }
+    #humming {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    #taylor {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    #jumbo {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #taka {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    #vienna {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    #lola {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    aside {
+        grid-area: 1 / 3 / 4 / 4;
+    }
+}
+@media all and (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+    }
+    aside {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;}
+}
+@media all and (max-device-width: 426px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+    }
+    #humming {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    #taylor {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #jumbo {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    #taka {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    #vienna {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    #lola {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+    aside {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+    aside div {
+        margin-left: 40%;
+        font-size: xx-large;
+        width: 25vw;
+    }
+}
