@@ -38,6 +38,9 @@ a:hover {
     text-decoration: none;
     color: blueviolet;
 }
+.pageActive {
+    background-color: aquamarine;
+}
 #taylor img {
     height: 70%;
     width: 70%;
